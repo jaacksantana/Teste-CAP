@@ -1,12 +1,14 @@
 package inicio;
 
 public class Teste01 {
+	
 	private static int valor;
 	
 	public Teste01() {
 		
 
 	}
+	
 	public void RealizarTeste() {
 		
 		// Cria os atributos
@@ -34,7 +36,7 @@ public class Teste01 {
 		String armazena = "";
 
 		// Percorre para adicioar os espacos
-		for (int i = 1 ; i <= 6 - ContadorEspaco; i++){
+		for (int i = 1 ; i <= valor - ContadorEspaco; i++){
 			armazena += " ";	
 		}
 		
@@ -45,7 +47,7 @@ public class Teste01 {
 		
 		return armazena;
 	}
-	
+
 	public int getValor() {
 		return valor;
 	}
