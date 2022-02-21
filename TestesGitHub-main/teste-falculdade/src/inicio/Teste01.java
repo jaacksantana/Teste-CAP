@@ -1,17 +1,22 @@
 package inicio;
 
 public class Teste01 {
+	private static int valor;
 	
 	public Teste01() {
+		
+
+	}
+	public void RealizarTeste() {
 		
 		// Cria os atributos
 		int contarEspaco = 1;
 		
 		// Percorre as linhas
-		for (int x = 1; x<=6;x++) {
+		for (int x = 1; x<=valor;x++) {
 			
 			// Percorre as colunas
-			for (int y = 1;y<=6;y++) {
+			for (int y = 1;y<=valor;y++) {
 				
 				if (contarEspaco == x) {
 					System.out.println(AdicionarEspacoAndAsterisco(contarEspaco));
@@ -39,6 +44,14 @@ public class Teste01 {
 		}
 		
 		return armazena;
+	}
+	
+	public int getValor() {
+		return valor;
+	}
+
+	public void setValor(int valor) {
+		this.valor = valor;
 	}
 	
 }
